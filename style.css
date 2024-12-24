@@ -1,0 +1,87 @@
+.Test4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  /* background: radial-gradient(ellipse at bottom, #20e3a2 0%, #ba55d3 100%); */
+  background-color: black;
+  overflow: hidden;
+}
+.skills-section {
+  /* max-width: 600px; */
+  width: 95%;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #000000;
+}
+
+ .skills-section svg{
+  font: 23.5em/1 Open Sans, Impact;
+  text-transform: uppercase;
+ }
+.text {
+  fill: none;
+  stroke-width: 6;
+  stroke-linejoin: round;
+  stroke-dasharray: 100 10;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+  stroke: #F2385A;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+.skill {
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  position: relative;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  font-family: "Dancing Script", cursive;
+  /* font-optical-sizing: auto; */
+  font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+.progress-container {
+  position: relative;
+  height: 25px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.progress-bar {
+  height: 100%;
+  background-color: #F2385A;
+  border-radius: 10px;
+  width: 0;
+  transition: width 2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+}
+.skill:hover .progress-bar {
+  width: var(--progress);
+}
