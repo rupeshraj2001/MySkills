@@ -6,7 +6,6 @@
     <title>My Skills</title>
     <link rel="stylesheet" href="./style.css">
     <style>
-        /* ---- reset ---- */
         body {
             margin: 0;
             font: normal 75% Arial, Helvetica, sans-serif;
@@ -17,7 +16,6 @@
             vertical-align: bottom;
         }
 
-        /* ---- particles.js container ---- */
         #particles-js {
             position: absolute;
             width: 100%;
@@ -29,7 +27,6 @@
             z-index: 1;
         }
 
-        /* ---- stats.js ---- */
         .count-particles {
             background: #000022;
             position: absolute;
@@ -66,20 +63,16 @@
             border-radius: 0 0 3px 3px;
         }
 
-        /* Section styling */
         .sec1 {
             position: relative;
-            z-index: 2; /* Ensures content is above particles.js */
-            /* border: 2px solid red; */
+            z-index: 2;
             height: 460px;
             width: auto;
-            /* background-color: rgba(0, 0, 0, 0.5); */
             text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            /* padding: 20px; */
         }
 
         .sec1 h1 {
@@ -103,12 +96,11 @@
             display: inline-block;
             font-size: 40px;
             color: cyan;
-            width: 300px; /* Reserve space for the span */
+            width: 300px;
             text-align: left;
-            animation: none; /* No animation applied directly */
+            animation: none;
         }
 
-        /* Add this if you want to center-align everything */
         .sec1 {
             text-align: center;
         }
@@ -133,7 +125,6 @@
     </style>
 </head>
 <body>
-    <!-- <div id="particles-js"></div> -->
     <section class="sec1">
         <div id="particles-js"></div>
         <h1>Hi I'm RUPESH RAJ</h1>
@@ -142,10 +133,8 @@
     <section class="sec2">
         <section class="Test4" id="skill">
             <div class="skills-section">
-                <!-- <h1>This is skills</h1> -->
                 <svg viewBox="0 0 1320 300">
     
-                    <!-- Symbol -->
                     <symbol id="s-text">
                       <text text-anchor="middle"
                             x="50%" y="50%" dy=".35em">
@@ -153,7 +142,6 @@
                       </text>
                     </symbol>  
                   
-                    <!-- Duplicate symbols -->
                     <use xlink:href="#s-text" class="text"></use>
                     <use xlink:href="#s-text" class="text"></use>
                     <use xlink:href="#s-text" class="text"></use>
