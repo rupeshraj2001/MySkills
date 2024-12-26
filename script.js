@@ -69,4 +69,4 @@ particlesJS("particles-js", {
     }
     requestAnimationFrame(update);
   };
-  requestAnimationFrame(update); 
+  requestAnimationFrame(update);  
